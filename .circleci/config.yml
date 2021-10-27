@@ -1,0 +1,90 @@
+---
+version: 2.1
+
+orbs:
+  cli: circleci/circleci-cli@0.1.9
+  orb-tools: circleci/orb-tools@10.1.0
+
+parameters:
+  yarn-cache-key:
+    type: string
+    default: v1-yarn-cache-{{ checksum ".nvmrc" }}-{{ checksum "yarn.lock" }}
+
+executors:
+  node-executor:
+    docker:
+      - image: circleci/node:latest
+    working_directory: ~/repo
+
+jobs:
+  setup:
+    executor: node-executor
+    steps:
+      - checkout
+      - cli/install:
+          debug: true
+      - restore_cache:
+          keys:
+            - << pipeline.parameters.yarn-cache-key >>
+      - run: yarn install
+      - save_cache:
+          key: << pipeline.parameters.yarn-cache-key >>
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: .
+          paths:
+            - '*'
+  build:
+    executor: cli/default
+    steps:
+      - attach_workspace:
+          at: .
+      - orb-tools/lint:
+          orb-path: packed-orb.yml
+      - orb-tools/pack:
+          source: src
+          destination: packed-orb.yml
+      - orb-tools/validate:
+          orb-path: packed-orb.yml
+      - store_artifacts:
+          path: packed-orb.yml
+      - persist_to_workspace:
+          root: .
+          paths:
+            - '*'
+  release:
+    executor: node-executor
+    steps:
+      - attach_workspace:
+          at: .
+      - deploy:
+          command: npx semantic-release
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - setup
+      - build:
+        requires:
+          - setup
+      - orb-tools/publish-dev:
+          orb-path: packed-orb.yml
+          orb-ref: "newhighsco/orb@dev:${CIRCLE_BRANCH}"
+          publish-token-variable: CIRCLECI_API_TOKEN
+          attach-workspace: true
+          checkout: false
+          requires:
+            - build
+          filters:
+            branches:
+              ignore:
+                - main
+      - release:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - main
