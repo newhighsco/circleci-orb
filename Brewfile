@@ -1,1 +1,2 @@
+brew "circleci"
 brew "yamllint"
