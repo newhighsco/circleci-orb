@@ -38,7 +38,7 @@ jobs:
           paths:
             - '*'
   build:
-    executor: node-executor
+    executor: cli/default
     steps:
       - attach_workspace:
           at: .
@@ -54,7 +54,7 @@ jobs:
           paths:
             - '*'
   release:
-    executor: node-executor
+    executor: cli/default
     steps:
       - attach_workspace:
           at: .
