@@ -17,9 +17,9 @@
   "scripts": {
     "prepare": "brew bundle",
     "prebuild": "rm -rf packed-orb.yml",
-    "build": "circleci config pack --skip-update-check src > packed-orb.yml",
+    "build": "circleci orb pack --skip-update-check src > packed-orb.yml",
     "pretest": "yarn lint",
-    "test": "circleci config validate packed-orb.yml",
+    "test": "circleci orb validate --skip-update-check packed-orb.yml",
     "lint": "yamllint ."
   },
   "devDependencies": {

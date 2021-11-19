@@ -1,0 +1,24 @@
+parameters:
+  cache-version:
+    type: string
+    default: v1
+  cache-key:
+    type: string
+    default: << parameters.cache-version >>-yarn-cache-{{ checksum ".nvmrc" }}-{{ checksum "yarn.lock" }}
+
+executor: node
+
+steps:
+  - checkout
+  - restore_cache:
+      keys:
+        - << parameters.cache-key >>
+  - run: yarn install
+  - save_cache:
+      key: << parameters.cache-key >>
+      paths:
+        - node_modules
+  - persist_to_workspace:
+      root: .
+      paths:
+        - '*'

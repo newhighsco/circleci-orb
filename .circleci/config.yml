@@ -75,13 +75,15 @@ workflows:
           requires:
             - setup
       - orb-tools/publish-dev:
-          orb-path: << pipeline.parameters.orb-path >>
-          orb-ref: "newhighsco/orb@dev:${CIRCLE_BRANCH}"
-          publish-token-variable: CIRCLECI_API_TOKEN
           attach-workspace: true
-          checkout: false
+          branch-sha-version-ref: dev:$CIRCLE_BRANCH
+          orb-name: newhighsco/orb
+          orb-path: << pipeline.parameters.orb-path >>
+          publish-alpha-version: false
+          publish-branch-sha-version: true
           requires:
             - build
+            - orb-tools/lint
           filters:
             branches:
               ignore:

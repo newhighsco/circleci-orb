@@ -3,3 +3,6 @@ extends: relaxed
 ignore: |
   node_modules
   packed-orb.yml
+
+rules:
+  line-length: disable
