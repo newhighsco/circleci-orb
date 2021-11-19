@@ -23,8 +23,9 @@ jobs:
     executor: node-executor
     steps:
       - checkout
-      - cli/install:
-          debug: true
+      - cli/install
+      - cli/setup:
+          token: CIRCLECI_API_TOKEN
       - restore_cache:
           keys:
             - << pipeline.parameters.yarn-cache-key >>
@@ -38,7 +39,7 @@ jobs:
           paths:
             - '*'
   build:
-    executor: cli/default
+    executor: node-executor
     steps:
       - attach_workspace:
           at: .
@@ -54,7 +55,7 @@ jobs:
           paths:
             - '*'
   release:
-    executor: cli/default
+    executor: node-executor
     steps:
       - attach_workspace:
           at: .
