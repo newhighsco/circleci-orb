@@ -23,8 +23,7 @@ jobs:
     executor: node-executor
     steps:
       - checkout
-      - cli/install:
-          install-dir: .
+      - cli/install
       - cli/setup:
           token: CIRCLECI_API_TOKEN
       - restore_cache:
@@ -39,6 +38,7 @@ jobs:
           root: .
           paths:
             - '*'
+            - /usr/local/bin
   build:
     executor: node-executor
     steps:
