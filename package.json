@@ -49,10 +49,13 @@
       "main"
     ],
     "plugins": [
-      "semantic-release-circleci-orb",
-      {
-        "orbName": "newhighsco/orb"
-      }
+      [
+        "semantic-release-circleci-orb",
+        {
+          "orbName": "newhighsco/orb",
+          "orbPath": "packed-orb.yml"
+        }
+      ]
     ]
   },
   "renovate": {
