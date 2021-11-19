@@ -8,6 +8,9 @@ parameters:
   yarn-cache-key:
     type: string
     default: v1-yarn-cache-{{ checksum ".nvmrc" }}-{{ checksum "yarn.lock" }}
+  orb-name:
+    type: string
+    default: newhighsco/orb
   orb-path:
     type: string
     default: packed-orb.yml
@@ -25,10 +28,10 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - << pipeline.parameters.yarn-cache-key >>
+            - <<pipeline.parameters.yarn-cache-key>>
       - run: yarn install --ignore-scripts
       - save_cache:
-          key: << pipeline.parameters.yarn-cache-key >>
+          key: <<pipeline.parameters.yarn-cache-key>>
           paths:
             - node_modules
       - persist_to_workspace:
@@ -43,11 +46,11 @@ jobs:
       - cli/install
       - orb-tools/pack:
           source: src
-          destination: << pipeline.parameters.orb-path >>
+          destination: <<pipeline.parameters.orb-path>>
       - orb-tools/validate:
-          orb-path: << pipeline.parameters.orb-path >>
+          orb-path: <<pipeline.parameters.orb-path>>
       - store_artifacts:
-          path: << pipeline.parameters.orb-path >>
+          path: <<pipeline.parameters.orb-path>>
       - persist_to_workspace:
           root: .
           paths:
@@ -76,10 +79,10 @@ workflows:
           requires:
             - test
       - orb-tools/publish-dev:
-          name: release-dev
+          name: prerelease
           branch-sha-version-ref: dev:$CIRCLE_BRANCH
-          orb-name: newhighsco/orb
-          orb-path: << pipeline.parameters.orb-path >>
+          orb-name: <<pipeline.parameters.orb-name>>
+          orb-path: <<pipeline.parameters.orb-path>>
           publish-alpha-version: false
           publish-branch-sha-version: true
           publish-token-variable: CIRCLECI_API_TOKEN
