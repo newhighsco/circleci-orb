@@ -1,4 +1,3 @@
----
 version: 2.1
 
 orbs:
@@ -9,6 +8,9 @@ parameters:
   yarn-cache-key:
     type: string
     default: v1-yarn-cache-{{ checksum ".nvmrc" }}-{{ checksum "yarn.lock" }}
+  orb-path:
+    type: string
+    default: packed-orb.yml
 
 executors:
   node-executor:
@@ -40,15 +42,13 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - orb-tools/lint:
-          orb-path: packed-orb.yml
       - orb-tools/pack:
           source: src
-          destination: packed-orb.yml
+          destination: << pipeline.parameters.orb-path >>
       - orb-tools/validate:
-          orb-path: packed-orb.yml
+          orb-path: << pipeline.parameters.orb-path >>
       - store_artifacts:
-          path: packed-orb.yml
+          path: << pipeline.parameters.orb-path >>
       - persist_to_workspace:
           root: .
           paths:
@@ -69,8 +69,13 @@ workflows:
       - build:
           requires:
             - setup
+      - orb-tools/lint:
+          attach-workspace: true
+          use-default-rules: false
+          requires:
+            - setup
       - orb-tools/publish-dev:
-          orb-path: packed-orb.yml
+          orb-path: << pipeline.parameters.orb-path >>
           orb-ref: "newhighsco/orb@dev:${CIRCLE_BRANCH}"
           publish-token-variable: CIRCLECI_API_TOKEN
           attach-workspace: true

@@ -20,7 +20,7 @@
     "build": "circleci config pack --skip-update-check src > packed-orb.yml",
     "pretest": "yarn lint",
     "test": "circleci config validate packed-orb.yml",
-    "lint": "yamllint src"
+    "lint": "yamllint ."
   },
   "devDependencies": {
     "@commitlint/cli": "13.2.1",
