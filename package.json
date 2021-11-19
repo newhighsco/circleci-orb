@@ -26,11 +26,10 @@
     "@commitlint/cli": "15.0.0",
     "@newhighsco/commitlint-config": "1.0.16",
     "@newhighsco/editor-config": "1.1.2",
-    "@newhighsco/release-config": "1.0.73",
+    "@newhighsco/release-config": "1.1.0",
     "husky": "7.0.4",
     "npm-run-all": "4.1.5",
-    "semantic-release": "18.0.0",
-    "semantic-release-circleci-orb": "1.1.1"
+    "semantic-release": "18.0.0"
   },
   "commitlint": {
     "extends": [
@@ -44,18 +43,9 @@
     }
   },
   "release": {
-    "extends": "@newhighsco/release-config",
+    "extends": "@newhighsco/release-config/orb",
     "branches": [
       "main"
-    ],
-    "plugins": [
-      [
-        "semantic-release-circleci-orb",
-        {
-          "orbName": "newhighsco/orb",
-          "orbPath": "packed-orb.yml"
-        }
-      ]
     ]
   },
   "renovate": {
