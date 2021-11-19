@@ -67,16 +67,16 @@ workflows:
     jobs:
       - setup
       - orb-tools/lint:
-          name: Test
+          name: test
           attach-workspace: true
           use-default-rules: false
           requires:
             - setup
       - build:
           requires:
-            - orb-tools/lint
+            - test
       - orb-tools/publish-dev:
-          name: Release
+          name: release
           branch-sha-version-ref: dev:$CIRCLE_BRANCH
           orb-name: newhighsco/orb
           orb-path: << pipeline.parameters.orb-path >>
