@@ -175,20 +175,20 @@
     update-notifier "^2.2.0"
     yargs "^8.0.2"
 
-"@newhighsco/commitlint-config@1.0.16":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.16.tgz#baf7bb2613adcff18185487984432e9fb56f7340"
-  integrity sha512-oLE6VbtJR//2m+AxxMwsdJROT5FBGxEnUFkz7+4Jb+CQWLBY0K8/JlI1Q5JyW9j6pJ6y/8Ctjh/ILLWw6jwfpA==
+"@newhighsco/commitlint-config@1.0.18":
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.18.tgz#0bc2222438bb110dd773658187986f8afc55483c"
+  integrity sha512-McQF8Fl0csUK0yP/dmZfVDIQ5lVDI52jEwPn7yAlByUZdab7kIhaV7VAGQCcKf23SPDTGWYWe9Bb0HhayvIhaw==
 
 "@newhighsco/editor-config@1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.1.2.tgz#4f9d24749bf2db72e0af963052e9fa741ed749aa"
   integrity sha512-MFzblCmgiEOte69Mv8dQTT6+4Rj27e3x6bA7tuxycCPCwo4CsP3vWAfEhcz9hDO3+S5Vs/AIpxWTqzt2m0RJNw==
 
-"@newhighsco/release-config@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.1.0.tgz#ccc547886c17687030252ab7df12d0bd0d2519e7"
-  integrity sha512-Cm5vJ85lJPxE6jR8CyHu3VhTy0rDS7wTZ/eFX1bPNtt3OAeHOrhQFbJDYnHVOTa4RFpCEz+C3Kqt/rhtdyjSkw==
+"@newhighsco/release-config@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.1.1.tgz#27e1dc04101870f11ee01605aa1f7d2e89f0654c"
+  integrity sha512-HizxQkFq4HQXUkWid7Ln3asfl3l34hihjAQCYTvPu2dDQcJdNj4gmQV6QQ4ntYAIfsSCwCVRwZkAM7VeMR5wcw==
   dependencies:
     "@semantic-release/changelog" "6.0.1"
     "@semantic-release/commit-analyzer" "9.0.1"
