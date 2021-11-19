@@ -38,7 +38,7 @@ jobs:
           paths:
             - '*'
   build:
-    executor: cli/default
+    executor: node-executor
     steps:
       - attach_workspace:
           at: .
@@ -91,6 +91,7 @@ workflows:
       - release:
           requires:
             - build
+            - orb-tools/lint
           filters:
             branches:
               only:
