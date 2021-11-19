@@ -23,6 +23,8 @@ jobs:
     executor: node-executor
     steps:
       - checkout
+      - cli/install:
+          install-dir: /home/circleci/bin
       - restore_cache:
           keys:
             - << pipeline.parameters.yarn-cache-key >>
@@ -34,13 +36,13 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - '*'
+            - *
+            - /home/circleci/bin
   build:
     executor: node-executor
     steps:
       - attach_workspace:
           at: .
-      - cli/install
       - orb-tools/pack:
           source: src
           destination: << pipeline.parameters.orb-path >>
@@ -51,13 +53,12 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - '*'
+            - << pipeline.parameters.orb-path >>
   release:
     executor: node-executor
     steps:
       - attach_workspace:
           at: .
-      - cli/install
       - deploy:
           command: npx semantic-release
 
@@ -75,7 +76,6 @@ workflows:
           requires:
             - setup
       - orb-tools/publish-dev:
-          attach-workspace: true
           branch-sha-version-ref: dev:$CIRCLE_BRANCH
           orb-name: newhighsco/orb
           orb-path: << pipeline.parameters.orb-path >>
