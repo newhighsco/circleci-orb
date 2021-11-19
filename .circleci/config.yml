@@ -24,6 +24,8 @@ jobs:
     steps:
       - checkout
       - cli/install
+      - run: circleci --help
+      - run: circleci version
       - cli/setup:
           token: CIRCLECI_API_TOKEN
       - restore_cache:
