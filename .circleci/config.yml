@@ -28,7 +28,7 @@ jobs:
       - restore_cache:
           keys:
             - << pipeline.parameters.yarn-cache-key >>
-      - run: yarn install
+      - run: yarn install --ignore-scripts
       - save_cache:
           key: << pipeline.parameters.yarn-cache-key >>
           paths:
