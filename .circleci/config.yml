@@ -24,8 +24,6 @@ jobs:
     steps:
       - checkout
       - cli/install
-      - run: circleci --help
-      - run: circleci version
       - cli/setup:
           token: CIRCLECI_API_TOKEN
       - restore_cache:
@@ -45,6 +43,8 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - run: circleci --help
+      - run: circleci version
       - orb-tools/pack:
           source: src
           destination: << pipeline.parameters.orb-path >>
