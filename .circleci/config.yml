@@ -67,8 +67,8 @@ workflows:
     jobs:
       - setup
       - build:
-        requires:
-          - setup
+          requires:
+            - setup
       - orb-tools/publish-dev:
           orb-path: packed-orb.yml
           orb-ref: "newhighsco/orb@dev:${CIRCLE_BRANCH}"
