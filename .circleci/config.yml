@@ -81,6 +81,7 @@ workflows:
           orb-path: << pipeline.parameters.orb-path >>
           publish-alpha-version: false
           publish-branch-sha-version: true
+          publish-token-variable: CIRCLECI_API_TOKEN
           requires:
             - build
             - orb-tools/lint
