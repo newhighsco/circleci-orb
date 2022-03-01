@@ -209,16 +209,16 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.1.2.tgz#4f9d24749bf2db72e0af963052e9fa741ed749aa"
   integrity sha512-MFzblCmgiEOte69Mv8dQTT6+4Rj27e3x6bA7tuxycCPCwo4CsP3vWAfEhcz9hDO3+S5Vs/AIpxWTqzt2m0RJNw==
 
-"@newhighsco/release-config@1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.1.5.tgz#b509467611bb94882850bf0fd6e31479b1f8e531"
-  integrity sha512-J/SGzS0UDDb2J32y2CvGj76iqEbIyyFqFKucjU937oj7+ruHHzhT2epk94VxcsBTAR5IAPSR2oX8kkRydnad2w==
+"@newhighsco/release-config@1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.1.6.tgz#66e8f0c44dd130de74b76122d41582fbde37d9b4"
+  integrity sha512-1mBXjjW1gB2xggjkE5HMaKVs2KLEXbwgSnjaNi0rTxLCcSO93WjK1UFShSo0ukdqtdGQaQqxVaT2SWlZPGtRng==
   dependencies:
     "@semantic-release/changelog" "6.0.1"
     "@semantic-release/commit-analyzer" "9.0.2"
     "@semantic-release/git" "10.0.1"
     "@semantic-release/github" "8.0.2"
-    "@semantic-release/npm" "9.0.0"
+    "@semantic-release/npm" "9.0.1"
     "@semantic-release/release-notes-generator" "10.0.3"
     semantic-release-circleci-orb "1.1.1"
 
@@ -598,7 +598,26 @@
     p-retry "^4.0.0"
     url-join "^4.0.0"
 
-"@semantic-release/npm@9.0.0", "@semantic-release/npm@^9.0.0":
+"@semantic-release/npm@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-9.0.1.tgz#d81828eb1fb771e2767b3a8ee989915e1af27075"
+  integrity sha512-I5nVZklxBzfMFwemhRNbSrkiN/dsH3c7K9+KSk6jUnq0rdLFUuJt7EBsysq4Ir3moajQgFkfEryEHPqiKJj20g==
+  dependencies:
+    "@semantic-release/error" "^3.0.0"
+    aggregate-error "^3.0.0"
+    execa "^5.0.0"
+    fs-extra "^10.0.0"
+    lodash "^4.17.15"
+    nerf-dart "^1.0.0"
+    normalize-url "^6.0.0"
+    npm "^8.3.0"
+    rc "^1.2.8"
+    read-pkg "^5.0.0"
+    registry-auth-token "^4.0.0"
+    semver "^7.1.2"
+    tempy "^1.0.0"
+
+"@semantic-release/npm@^9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-9.0.0.tgz#b4868bb35cc64c3a040791661311398dd1fcadc0"
   integrity sha512-hj2jqayS2SPUmFtCMCOQMX975uMDfRoymj1HvMSwYdaoI6hVZvhrTFPBgJeM85O0C+G3IFviAUar5gel/1VGDQ==
