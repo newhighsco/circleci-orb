@@ -199,20 +199,20 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@newhighsco/commitlint-config@1.0.24":
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.0.24.tgz#ab9e0d7ae8750b87383595940aa62bbd389b9bab"
-  integrity sha512-uxkAtgAbT2vsntQuuC1fG0Vy/SnykwlzCIyzLoU+DC/e4iRzIDKZ0HqTv8SYScpi9a/PAHm/L9WxZuKTzr3uLQ==
+"@newhighsco/commitlint-config@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.1.0.tgz#d4060c18045a0699df25bf8e40f6efb466d48a28"
+  integrity sha512-4zc17HdyDMugBgo7X+0OJbvF5TAwJYgPTa7ekwuOCSSKhoAo/3VEDuZ9HYrE+cOUXqbqelTER7cEJfooqspFMg==
 
-"@newhighsco/editor-config@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.1.2.tgz#4f9d24749bf2db72e0af963052e9fa741ed749aa"
-  integrity sha512-MFzblCmgiEOte69Mv8dQTT6+4Rj27e3x6bA7tuxycCPCwo4CsP3vWAfEhcz9hDO3+S5Vs/AIpxWTqzt2m0RJNw==
+"@newhighsco/editor-config@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
+  integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/release-config@1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.1.6.tgz#66e8f0c44dd130de74b76122d41582fbde37d9b4"
-  integrity sha512-1mBXjjW1gB2xggjkE5HMaKVs2KLEXbwgSnjaNi0rTxLCcSO93WjK1UFShSo0ukdqtdGQaQqxVaT2SWlZPGtRng==
+"@newhighsco/release-config@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.0.tgz#3aa60736eefa7b19de757cad1278a34e3bd8ca1e"
+  integrity sha512-FCAawrJcC4SZafQStIJpjlPyx05PAWnfMclVWN+0SQ8XlVzKfaBlaSmvgG9kMIu9/4BUveu3KUYbv1AiJIw3aA==
   dependencies:
     "@semantic-release/changelog" "6.0.1"
     "@semantic-release/commit-analyzer" "9.0.2"
