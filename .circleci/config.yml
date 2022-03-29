@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   cli: circleci/circleci-cli@0.1.9
-  orb-tools: circleci/orb-tools@10.1.0
+  orb-tools: circleci/orb-tools@11.1.2
 
 parameters:
   yarn-cache-key:
