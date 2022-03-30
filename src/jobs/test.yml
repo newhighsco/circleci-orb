@@ -1,0 +1,7 @@
+executor: node/default
+
+steps:
+  - attach_workspace:
+      at: .
+  - node/run:
+      yarn-run: test
