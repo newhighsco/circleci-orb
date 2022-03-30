@@ -24,7 +24,7 @@ jobs:
     executor: node/default
     steps:
       - attach_workspace:
-          at: ./dist/
+          at: .
       - cli/install
       - deploy:
           command: npx semantic-release
