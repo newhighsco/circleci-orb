@@ -1,7 +1,12 @@
+parameters:
+  command:
+    type: string
+    default: yarn test
+
 executor: node/default
 
 steps:
   - attach_workspace:
       at: .
-  - node/run:
-      yarn-run: test
+  - run:
+      command: <<parameters.command>>
