@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/newhighsco/circleci-orb/compare/v1.1.0...v1.2.0) (2022-03-30)
+
+
+### Bug Fixes
+
+* **deps:** update `@newhighsco/release-config` ([7abe822](https://github.com/newhighsco/circleci-orb/commit/7abe822dc19423c21b02a08ce899a36bb5b91348))
+
+
+### Features
+
+* **jobs:** update setup ([3a607c4](https://github.com/newhighsco/circleci-orb/commit/3a607c4fbdd61b9b8cf719070b7da25d912f1686))
+
 # [1.1.0](https://github.com/newhighsco/circleci-orb/compare/v1.0.3...v1.1.0) (2022-03-30)
 
 
