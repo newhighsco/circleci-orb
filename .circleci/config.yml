@@ -10,6 +10,7 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - node/install
       - node/install-packages:
           pkg-manager: yarn
           cache-path: node_modules
