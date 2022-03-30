@@ -45,8 +45,8 @@ jobs:
           at: .
       - cli/install
       - orb-tools/pack:
-          source: src
-          destination: <<pipeline.parameters.orb-path>>
+          source-dir: src
+          output-dir: <<pipeline.parameters.orb-path>>
       - orb-tools/validate:
           orb-path: <<pipeline.parameters.orb-path>>
       - store_artifacts:
