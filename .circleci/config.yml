@@ -57,7 +57,7 @@ workflows:
           name: build
           requires:
             - test
-      - orb-tools/publish-dev:
+      - orb-tools/publish:
           name: prerelease
           orb-name: <<pipeline.parameters.orb-name>>
           circleci-token: CIRCLECI_API_TOKEN
