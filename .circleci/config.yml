@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   cli: circleci/circleci-cli@0.1.9
-  orb-tools: circleci/orb-tools@10.1.0
+  orb-tools: circleci/orb-tools@11.1.2
 
 parameters:
   yarn-cache-key:
@@ -11,9 +11,6 @@ parameters:
   orb-name:
     type: string
     default: newhighsco/orb
-  orb-path:
-    type: string
-    default: packed-orb.yml
 
 executors:
   node-executor:
@@ -38,23 +35,6 @@ jobs:
           root: .
           paths:
             - '*'
-  build:
-    executor: node-executor
-    steps:
-      - attach_workspace:
-          at: .
-      - cli/install
-      - orb-tools/pack:
-          source: src
-          destination: <<pipeline.parameters.orb-path>>
-      - orb-tools/validate:
-          orb-path: <<pipeline.parameters.orb-path>>
-      - store_artifacts:
-          path: <<pipeline.parameters.orb-path>>
-      - persist_to_workspace:
-          root: .
-          paths:
-            - '*'
   release:
     executor: node-executor
     steps:
@@ -71,22 +51,18 @@ workflows:
       - setup
       - orb-tools/lint:
           name: test
-          attach-workspace: true
-          use-default-rules: false
           requires:
             - setup
-      - build:
+      - orb-tools/pack:
+          name: build
           requires:
             - test
-      - orb-tools/publish-dev:
+      - orb-tools/publish:
           name: prerelease
-          branch-sha-version-ref: dev:$CIRCLE_BRANCH
           orb-name: <<pipeline.parameters.orb-name>>
-          orb-path: <<pipeline.parameters.orb-path>>
-          publish-alpha-version: false
-          publish-branch-sha-version: true
-          publish-token-variable: CIRCLECI_API_TOKEN
-          workspace-root: '.'
+          circleci-token: CIRCLECI_API_TOKEN
+          pub-type: dev
+          vcs-type: <<pipeline.project.type>>
           requires:
             - build
           filters:

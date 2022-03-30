@@ -2,7 +2,7 @@ extends: relaxed
 
 ignore: |
   node_modules
-  packed-orb.yml
+  dist
 
 rules:
   line-length: disable
