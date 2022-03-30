@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/newhighsco/circleci-orb/compare/v1.2.0...v1.3.0) (2022-03-30)
+
+
+### Features
+
+* **jobs:** update setup ([7034778](https://github.com/newhighsco/circleci-orb/commit/7034778c599857b5e7d18bc1b7fd7f764683b870))
+
 ## [1.0.3](https://github.com/newhighsco/circleci-orb/compare/v1.0.2...v1.0.3) (2021-11-19)
 
 
