@@ -2,22 +2,21 @@ parameters:
   cache-version:
     type: string
     default: v1
-  cache-key:
+  install-command:
     type: string
-    default: <<parameters.cache-version>>-yarn-cache-{{ checksum ".nvmrc" }}-{{ checksum "yarn.lock" }}
+    default: ''
 
-executor: node
+executor: node/default
 
 steps:
   - checkout
-  - restore_cache:
-      keys:
-        - <<parameters.cache-key>>
-  - run: yarn install
-  - save_cache:
-      key: <<parameters.cache-key>>
-      paths:
-        - node_modules
+  - node/install:
+      install-yarn: true
+  - node/install-packages:
+      pkg-manager: yarn
+      cache-path: node_modules
+      cache-version: <<parameters.cache-version>>
+      override-ci-command: <<parameters.install-command>>
   - persist_to_workspace:
       root: .
       paths:

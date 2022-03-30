@@ -4,3 +4,6 @@ description: New High Score shareable config for CircleCI
 
 display:
   source_url: https://github.com/newhighsco/circleci-orb
+
+orbs:
+  node: circleci/node@5.0.2
