@@ -1,11 +1,25 @@
 version: 2.1
 
 orbs:
-  newhighsco: newhighsco/orb@dev:<<pipeline.git.revision>>
   cli: circleci/circleci-cli@0.1.9
+  node: circleci/node@5.0.2
   orb-tools: circleci/orb-tools@11.1.2
 
 jobs:
+  setup:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install:
+          install-yarn: true
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-path: node_modules
+          override-ci-command: yarn install --ignore-scripts
+      - persist_to_workspace:
+          root: .
+          paths:
+            - '*'
   release:
     executor: node/default
     steps:
@@ -19,9 +33,7 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-      - newhighsco/setup:
-          name: setup
-          install-command: yarn install --ignore-scripts
+      - setup
       - orb-tools/lint:
           name: test
           requires:
