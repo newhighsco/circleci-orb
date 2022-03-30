@@ -16,10 +16,11 @@
   "files": [],
   "scripts": {
     "prepare": "brew bundle",
-    "prebuild": "rm -rf packed-orb.yml",
-    "build": "circleci orb pack --skip-update-check src > packed-orb.yml",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "circleci orb pack --skip-update-check src > dist/orb.yml",
     "pretest": "yarn lint",
-    "test": "circleci orb validate --skip-update-check packed-orb.yml",
+    "test": "circleci orb validate --skip-update-check dist/orb.yml",
+    "prelint": "yarn build",
     "lint": "yamllint ."
   },
   "devDependencies": {
