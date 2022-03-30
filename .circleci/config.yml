@@ -23,10 +23,12 @@ jobs:
   save:
     executor: node/default
     steps:
+      - attach_workspace:
+          at: dist
       - persist_to_workspace:
           root: .
           paths:
-            - '*'
+            - dist
   release:
     executor: node/default
     steps:
