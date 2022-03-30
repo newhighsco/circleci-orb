@@ -1,0 +1,12 @@
+parameters:
+  command:
+    type: string
+    default: semantic-release
+
+executor: node/default
+
+steps:
+  - attach_workspace:
+      at: .
+  - node/run:
+      yarn-run: <<parameters.command>>
