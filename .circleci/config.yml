@@ -71,8 +71,6 @@ workflows:
       - setup
       - orb-tools/lint:
           name: test
-          attach-workspace: true
-          use-default-rules: false
           requires:
             - setup
       - build:
