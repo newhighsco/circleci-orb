@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/newhighsco/circleci-orb/compare/v1.3.0...v1.4.0) (2022-03-30)
+
+
+### Bug Fixes
+
+* **jobs:** adjust typos ([a27e231](https://github.com/newhighsco/circleci-orb/commit/a27e2316ed59609e7c23b1e5d4c322a6087a6251))
+
+
+### Features
+
+* **jobs:** adds release job ([509a5f1](https://github.com/newhighsco/circleci-orb/commit/509a5f16e861f8a8e4567db35e600a3407b0be51))
+* **jobs:** adds test job ([1d90179](https://github.com/newhighsco/circleci-orb/commit/1d90179163f3d3bb92730441a0a166bd6cd245ed))
+
 # [1.3.0](https://github.com/newhighsco/circleci-orb/compare/v1.2.0...v1.3.0) (2022-03-30)
 
 
