@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/newhighsco/circleci-orb/compare/v1.5.0...v1.6.0) (2022-04-02)
+
+
+### Features
+
+* **jobs:** adds snapshot job ([af901ec](https://github.com/newhighsco/circleci-orb/commit/af901ec4a497ab08014d3a204b5bbf424d062acc))
+
 # [1.5.0](https://github.com/newhighsco/circleci-orb/compare/v1.4.0...v1.5.0) (2022-04-02)
 
 
