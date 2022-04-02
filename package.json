@@ -1,7 +1,7 @@
 {
   "name": "@newhighsco/circleci-orb",
   "description": "New High Score shareable config for CircleCI",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "New High Score <hello@newhighsco.re>",
   "license": "ISC",
   "private": true,

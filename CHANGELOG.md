@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/newhighsco/circleci-orb/compare/v1.6.0...v1.7.0) (2022-04-02)
+
+
+### Features
+
+* **jobs:** adds build job ([386dc2c](https://github.com/newhighsco/circleci-orb/commit/386dc2c0dcc9fb51f3698b85558a22cf44adf44f))
+
 # [1.6.0](https://github.com/newhighsco/circleci-orb/compare/v1.5.0...v1.6.0) (2022-04-02)
 
 
