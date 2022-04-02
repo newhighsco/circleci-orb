@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/newhighsco/circleci-orb/compare/v1.4.0...v1.5.0) (2022-04-02)
+
+
+### Features
+
+* **jobs:** replace `npx` with `yarn` ([9df41b3](https://github.com/newhighsco/circleci-orb/commit/9df41b3f14418900857fdcb751303294f8a623ba))
+
 # [1.4.0](https://github.com/newhighsco/circleci-orb/compare/v1.3.0...v1.4.0) (2022-03-30)
 
 
