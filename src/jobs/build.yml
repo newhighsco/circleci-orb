@@ -1,0 +1,21 @@
+parameters:
+  command:
+    type: string
+    default: yarn build
+  path-to-persist:
+    type: string
+
+
+executor: node/default
+
+steps:
+  - attach_workspace:
+      at: .
+  - run:
+      command: <<parameters.command>>
+  - when:
+      condition: <<parameters.path-to-persist>>
+      steps:
+        - persist_to_workspace:
+            root: .
+            paths: <<parameters.path-to-persist>>
