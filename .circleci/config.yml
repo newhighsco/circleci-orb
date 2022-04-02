@@ -36,7 +36,7 @@ jobs:
           at: .
       - cli/install
       - deploy:
-          command: npx semantic-release
+          command: yarn semantic-release
 
 workflows:
   version: 2
