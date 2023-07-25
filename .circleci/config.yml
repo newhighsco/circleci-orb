@@ -56,10 +56,10 @@ workflows:
             - build
       - orb-tools/publish:
           name: prerelease
-          orb-name: newhighsco/orb
-          circleci-token: CIRCLECI_API_TOKEN
-          pub-type: dev
-          vcs-type: <<pipeline.project.type>>
+          orb_name: newhighsco/orb
+          circleci_token: CIRCLECI_API_TOKEN
+          pub_type: dev
+          vcs_type: <<pipeline.project.type>>
           requires:
             - build
           filters:
