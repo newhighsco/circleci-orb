@@ -2,6 +2,9 @@ parameters:
   command:
     type: string
     default: yarn test
+  reports-dir:
+    type: string
+    default: reports
 
 executor: node/default
 
@@ -10,3 +13,5 @@ steps:
       at: .
   - run:
       command: <<parameters.command>>
+  - store_test_results:
+      path: <<parameters.reports-dir>>
