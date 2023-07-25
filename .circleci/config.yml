@@ -16,6 +16,7 @@ jobs:
           pkg-manager: yarn
           cache-path: node_modules
           override-ci-command: yarn install --ignore-scripts
+          include-branch-in-cache-key: false
       - persist_to_workspace:
           root: .
           paths:
