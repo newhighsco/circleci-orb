@@ -17,6 +17,7 @@ steps:
       cache-path: node_modules
       cache-version: <<parameters.cache-version>>
       override-ci-command: <<parameters.install-command>>
+      include-branch-in-cache-key: false
   - persist_to_workspace:
       root: .
       paths:
