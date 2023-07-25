@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   cli: circleci/circleci-cli@0.1.9
   node: circleci/node@5.1.0
-  orb-tools: circleci/orb-tools@11.6.1
+  orb-tools: circleci/orb-tools@12.0.4
 
 jobs:
   setup:
@@ -16,6 +16,7 @@ jobs:
           pkg-manager: yarn
           cache-path: node_modules
           override-ci-command: yarn install --ignore-scripts
+          include-branch-in-cache-key: false
       - persist_to_workspace:
           root: .
           paths:
@@ -56,10 +57,10 @@ workflows:
             - build
       - orb-tools/publish:
           name: prerelease
-          orb-name: newhighsco/orb
-          circleci-token: CIRCLECI_API_TOKEN
-          pub-type: dev
-          vcs-type: <<pipeline.project.type>>
+          orb_name: newhighsco/orb
+          circleci_token: CIRCLECI_API_TOKEN
+          pub_type: dev
+          vcs_type: <<pipeline.project.type>>
           requires:
             - build
           filters:
