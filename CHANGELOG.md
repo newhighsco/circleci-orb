@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/newhighsco/circleci-orb/compare/v1.7.0...v1.8.0) (2023-07-25)
+
+
+### Bug Fixes
+
+* **setup:** do not include branch in cache key ([d50f849](https://github.com/newhighsco/circleci-orb/commit/d50f849c5872dfabcdf5b7237a688642ecfa9f4a))
+
+
+### Features
+
+* **test:** store test results ([7820d60](https://github.com/newhighsco/circleci-orb/commit/7820d6078788748607cab559d5f6e51a6976d05a))
+
 # [1.7.0](https://github.com/newhighsco/circleci-orb/compare/v1.6.0...v1.7.0) (2022-04-02)
 
 
