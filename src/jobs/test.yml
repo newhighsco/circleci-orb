@@ -6,7 +6,7 @@ parameters:
     type: string
     default: reports
 
-executor: node/default
+executor: default
 
 steps:
   - attach_workspace:

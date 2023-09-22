@@ -6,7 +6,7 @@ parameters:
     type: string
 
 
-executor: node/default
+executor: default
 
 steps:
   - attach_workspace:

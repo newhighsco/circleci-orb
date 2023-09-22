@@ -3,7 +3,7 @@ parameters:
     type: string
     default: yarn semantic-release
 
-executor: node/default
+executor: default
 
 steps:
   - attach_workspace:
