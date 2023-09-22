@@ -6,7 +6,7 @@ parameters:
     type: string
     default: ''
 
-executor: node/default
+executor: default
 
 steps:
   - checkout

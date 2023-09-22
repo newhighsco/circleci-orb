@@ -3,7 +3,7 @@ parameters:
     type: string
     default: yarn snapshot --branch-name ${CIRCLE_BRANCH}${CIRCLE_TAG}
 
-executor: node/default
+executor: default
 
 steps:
   - attach_workspace:

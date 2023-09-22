@@ -1,0 +1,20 @@
+parameters:
+  resource_class:
+    default: large
+    enum:
+      - small
+      - medium
+      - medium+
+      - large
+      - xlarge
+      - 2xlarge
+      - 2xlarge+
+    type: enum
+  tag:
+    default: lts
+    type: string
+
+resource_class: <<parameters.resource_class>>
+
+docker:
+  - image: cimg/node:<<parameters.tag>>
