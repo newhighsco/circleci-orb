@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/newhighsco/circleci-orb/compare/v1.8.0...v1.9.0) (2023-09-25)
+
+
+### Features
+
+* add executor ([#169](https://github.com/newhighsco/circleci-orb/issues/169)) ([0e180f0](https://github.com/newhighsco/circleci-orb/commit/0e180f0a4aae3fb079cc59f759f2da6c73ca30c5))
+
 # [1.9.0](https://github.com/newhighsco/circleci-orb/compare/v1.8.0...v1.9.0) (2023-09-22)
 
 
