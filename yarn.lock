@@ -217,15 +217,15 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/release-config@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.49.tgz#8c8d28e9beda9b105643a80c78f642150f25e057"
-  integrity sha512-skVlvG5DA0WUuwl0teVACIMdyLSTFb6iqNWk+Rq1f0YsRoF2Kz2Eq2taBRHtGsJT1uid1eVcxp+S1mrAwWVcRA==
+"@newhighsco/release-config@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.50.tgz#9b5efc4082ffe293e3321f7ef313cb615abc8f44"
+  integrity sha512-YIDiLrU7j733IVzEhWrHE16vFN3DtIFj4R1GwmzV9R+Np8k3UhDRv9pj1FS/wO70dsKiF6y6VRYgrllPdTRqYw==
   dependencies:
     "@semantic-release/changelog" "6.0.3"
     "@semantic-release/commit-analyzer" "11.1.0"
     "@semantic-release/git" "10.0.1"
-    "@semantic-release/github" "9.2.3"
+    "@semantic-release/github" "9.2.4"
     "@semantic-release/npm" "11.0.1"
     "@semantic-release/release-notes-generator" "12.1.0"
     semantic-release-circleci-orb "1.1.1"
@@ -594,10 +594,10 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@9.2.3", "@semantic-release/github@^9.0.0":
-  version "9.2.3"
-  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-9.2.3.tgz#d8eeba7c00bf3145cee1bb9b60940d475af3e9f9"
-  integrity sha512-FAjXb1F84CVI6IG8fWi+XS9ErYD+s3MHkP03zBa3+GyUrV4kqwYu/WPppIciHxujGFR51SAWPkOY5rnH6ZlrxA==
+"@semantic-release/github@9.2.4", "@semantic-release/github@^9.0.0":
+  version "9.2.4"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-9.2.4.tgz#0f8db03b44d6157b2d46d2c518c8242ea23f9fe5"
+  integrity sha512-VMzqiuSLhHc0/1Q8M/FmWnOaclh5aXL2pQWceldWBYSWLNzQu8GOR4bkGl57ciUtvm+MCMi4FaStZxSDJGEfUg==
   dependencies:
     "@octokit/core" "^5.0.0"
     "@octokit/plugin-paginate-rest" "^9.0.0"
@@ -612,7 +612,7 @@
     https-proxy-agent "^7.0.0"
     issue-parser "^6.0.0"
     lodash-es "^4.17.21"
-    mime "^3.0.0"
+    mime "^4.0.0"
     p-filter "^3.0.0"
     url-join "^5.0.0"
 
@@ -3868,10 +3868,10 @@ mime-types@^2.1.12, mime-types@~2.1.19:
   dependencies:
     mime-db "1.48.0"
 
-mime@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-3.0.0.tgz#b374550dca3a0c18443b0c950a6a58f1931cf7a7"
-  integrity sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==
+mime@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-4.0.0.tgz#ae999669db9568c31a8da18dff6c696663f65486"
+  integrity sha512-pzhgdeqU5pJ9t5WK9m4RT4GgGWqYJylxUf62Yb9datXRwdcw5MjiD1BYI5evF8AgTXN9gtKX3CFLvCUL5fAhEA==
 
 mimic-fn@^1.0.0:
   version "1.2.0"
