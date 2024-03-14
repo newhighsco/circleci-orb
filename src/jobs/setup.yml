@@ -8,6 +8,9 @@ parameters:
 
 executor: default
 
+environment:
+  HUSKY: 0
+
 steps:
   - checkout
   - node/install:
