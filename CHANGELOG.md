@@ -1,3 +1,12 @@
+## [1.10.1](https://github.com/newhighsco/circleci-orb/compare/v1.10.0...v1.10.1) (2024-03-14)
+
+
+### Bug Fixes
+
+* **release:** manual run `yarn build` ([2dae139](https://github.com/newhighsco/circleci-orb/commit/2dae139451fabe94dfebe2e595fb03f88c6264fc))
+* **release:** persist correct path ([9bed2ba](https://github.com/newhighsco/circleci-orb/commit/9bed2baf0f8bfc4865e5f8bb3775b06b8a06e845))
+* **release:** use auto-persist ([9d60ae0](https://github.com/newhighsco/circleci-orb/commit/9d60ae009617ab1f152e3bf4049e3a068ff6f7ab))
+
 # [1.10.0](https://github.com/newhighsco/circleci-orb/compare/v1.9.0...v1.10.0) (2024-03-14)
 
 
