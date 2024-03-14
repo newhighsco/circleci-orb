@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/newhighsco/circleci-orb/compare/v1.9.0...v1.10.0) (2024-03-14)
+
+
+### Features
+
+* **setup:** disable `husky` by default ([#253](https://github.com/newhighsco/circleci-orb/issues/253)) ([7854c7d](https://github.com/newhighsco/circleci-orb/commit/7854c7d87bbdfa244bf675789e44d66e1d99dd08))
+
 # [1.9.0](https://github.com/newhighsco/circleci-orb/compare/v1.8.0...v1.9.0) (2023-09-25)
 
 
