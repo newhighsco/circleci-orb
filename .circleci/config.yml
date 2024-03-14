@@ -8,6 +8,8 @@ orbs:
 jobs:
   setup:
     executor: node/default
+    environment:
+      HUSKY: 0
     steps:
       - checkout
       - node/install:
