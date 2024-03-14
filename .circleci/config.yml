@@ -23,21 +23,16 @@ jobs:
           root: .
           paths:
             - '*'
-  save:
-    executor: node/default
-    steps:
-      - attach_workspace:
-          at: .
-      - persist_to_workspace:
-          root: .
-          paths:
-            - dist
   release:
     executor: node/default
     steps:
       - attach_workspace:
           at: .
       - cli/install
+      - run:
+          command: ls
+      - run:
+          command: ls dist
       - deploy:
           command: yarn semantic-release
 
@@ -54,9 +49,6 @@ workflows:
           name: build
           requires:
             - test
-      - save:
-          requires:
-            - build
       - orb-tools/publish:
           name: prerelease
           orb_name: newhighsco/orb
@@ -71,7 +63,7 @@ workflows:
                 - main
       - release:
           requires:
-            - save
+            - build
           filters:
             branches:
               only:
