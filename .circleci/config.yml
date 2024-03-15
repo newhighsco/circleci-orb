@@ -31,7 +31,7 @@ jobs:
       - cli/install
       - run:
           command: yarn build
-      - deploy:
+      - run:
           command: yarn semantic-release
 
 workflows:
