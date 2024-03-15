@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/newhighsco/circleci-orb/compare/v1.10.1...v1.10.2) (2024-03-15)
+
+
+### Bug Fixes
+
+* migrate from deploy to run ([#257](https://github.com/newhighsco/circleci-orb/issues/257)) ([8f3b6f5](https://github.com/newhighsco/circleci-orb/commit/8f3b6f5cbe9e9e7a7d0d59572f4aaf86d282e606))
+
 ## [1.10.1](https://github.com/newhighsco/circleci-orb/compare/v1.10.0...v1.10.1) (2024-03-14)
 
 
