@@ -8,5 +8,5 @@ executor: default
 steps:
   - attach_workspace:
       at: .
-  - deploy:
+  - run:
       command: <<parameters.command>>
