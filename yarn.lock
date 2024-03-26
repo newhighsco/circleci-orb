@@ -213,17 +213,17 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/release-config@1.3.66":
-  version "1.3.66"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.66.tgz#eaa788d252a8660ec99ae0bd0ef75fd96e8a0846"
-  integrity sha512-fK+tyk+8AAZMDynhd+aOgaz7ia2HkotpmQD9SEd2HvKUKJgh0u3kAkgOLu2af5efcAWpPWFGOy7nTHc7LmfY3A==
+"@newhighsco/release-config@1.3.68":
+  version "1.3.68"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.3.68.tgz#67243874bc911217bd4ba81baf5a31befbfccc4e"
+  integrity sha512-LgllXIzQlfZGdvfXnrb8s+Hb4/DlhU33J2ZewPgXTcYhSVRmf4qy+fKKpkEDwlQygLrj1l/dDzIDei3SE2/IJA==
   dependencies:
     "@semantic-release/changelog" "6.0.3"
     "@semantic-release/commit-analyzer" "12.0.0"
     "@semantic-release/git" "10.0.1"
     "@semantic-release/github" "10.0.2"
     "@semantic-release/npm" "12.0.0"
-    "@semantic-release/release-notes-generator" "12.1.0"
+    "@semantic-release/release-notes-generator" "13.0.0"
     semantic-release-circleci-orb "1.1.1"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -615,23 +615,7 @@
     semver "^7.1.2"
     tempy "^3.0.0"
 
-"@semantic-release/release-notes-generator@12.1.0":
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-12.1.0.tgz#7fbe501188c7960db412b96a97c3d6cfb5788d12"
-  integrity sha512-g6M9AjUKAZUZnxaJZnouNBeDNTCUrJ5Ltj+VJ60gJeDaRRahcHsry9HW8yKrnKkKNkx5lbWiEP1FPMqVNQz8Kg==
-  dependencies:
-    conventional-changelog-angular "^7.0.0"
-    conventional-changelog-writer "^7.0.0"
-    conventional-commits-filter "^4.0.0"
-    conventional-commits-parser "^5.0.0"
-    debug "^4.0.0"
-    get-stream "^7.0.0"
-    import-from-esm "^1.0.3"
-    into-stream "^7.0.0"
-    lodash-es "^4.17.21"
-    read-pkg-up "^11.0.0"
-
-"@semantic-release/release-notes-generator@^13.0.0":
+"@semantic-release/release-notes-generator@13.0.0", "@semantic-release/release-notes-generator@^13.0.0":
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-13.0.0.tgz#9fb312c234742e2716c09d669d5d786a4daad465"
   integrity sha512-LEeZWb340keMYuREMyxrODPXJJ0JOL8D/mCl74B4LdzbxhtXV2LrPN2QBEcGJrlQhoqLO0RhxQb6masHytKw+A==
