@@ -29,7 +29,7 @@
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/release-config": "1.3.70",
     "husky": "9.0.11",
-    "semantic-release": "23.0.7"
+    "semantic-release": "23.0.8"
   },
   "commitlint": {
     "extends": [
