@@ -27,7 +27,7 @@
     "@commitlint/cli": "19.4.0",
     "@newhighsco/commitlint-config": "1.1.41",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/release-config": "1.3.78",
+    "@newhighsco/release-config": "1.3.79",
     "husky": "9.1.4",
     "semantic-release": "24.0.0"
   },
