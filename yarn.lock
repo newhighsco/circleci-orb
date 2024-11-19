@@ -202,10 +202,10 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@newhighsco/commitlint-config@1.1.43":
-  version "1.1.43"
-  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.1.43.tgz#026c9001e2cf7a692191d09e242e3946ffa76608"
-  integrity sha512-ytiKuDgvs883gsD/LpBATjW7lVwTTTHNusNZP+KPJJdKWAamMMJ7YprjY5WBAAHRubX4wMC9bXoN/ymlAjkeWg==
+"@newhighsco/commitlint-config@1.1.44":
+  version "1.1.44"
+  resolved "https://registry.yarnpkg.com/@newhighsco/commitlint-config/-/commitlint-config-1.1.44.tgz#141bc39e5d4a2faf2b49add2d445e0f1e6797edc"
+  integrity sha512-LNz33eAX9+tiS2B8kX1yrkhNbkjXQkLWRMz5Y9d2wOmwPW2N59lkm8meUWcgtcPs93VVeN8fId3OB4R8L4FPoQ==
 
 "@newhighsco/editor-config@1.2.0":
   version "1.2.0"
