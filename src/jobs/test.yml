@@ -2,16 +2,30 @@ parameters:
   command:
     type: string
     default: yarn test
+  list-command:
+    type: string
+    default: yarn --silent test:list
   reports-dir:
     type: string
     default: reports
+  rerun-only-failed:
+    type: boolean
+    default: false
 
 executor: default
 
 steps:
   - attach_workspace:
       at: .
-  - run:
-      command: <<parameters.command>>
+  - when:
+      condition: <<parameters.rerun-only-failed>>
+      steps:
+        - run:
+            command: <<parameters.list-command>> | circleci tests run --command="xargs <<parameters.command>>" --split-by=timings
+  - unless:
+      condition: <<parameters.rerun-only-failed>>
+      steps:
+        - run:
+            command: <<parameters.command>>
   - store_test_results:
       path: <<parameters.reports-dir>>
