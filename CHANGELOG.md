@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/newhighsco/circleci-orb/compare/v1.10.2...v1.11.0) (2025-01-23)
+
+
+### Features
+
+* **test:** support rerun failed tests ([#353](https://github.com/newhighsco/circleci-orb/issues/353)) ([e6f8896](https://github.com/newhighsco/circleci-orb/commit/e6f8896064b1e2f0f33bb22fab937f394c100dd5))
+
 ## [1.10.2](https://github.com/newhighsco/circleci-orb/compare/v1.10.1...v1.10.2) (2024-03-15)
 
 
