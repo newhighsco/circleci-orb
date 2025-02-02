@@ -24,7 +24,7 @@
     "lint": "yamllint ."
   },
   "devDependencies": {
-    "@commitlint/cli": "19.6.1",
+    "@commitlint/cli": "19.7.1",
     "@newhighsco/commitlint-config": "1.1.45",
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/release-config": "1.4.1",
