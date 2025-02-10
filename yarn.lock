@@ -212,10 +212,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/release-config@1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.4.1.tgz#41a69641343b5648d05400a9be744a32c4066d07"
-  integrity sha512-wEoRLsu1hS3NvaVPa0GqGHgHMo9G8BdG3QPjmPe1eIiB9MfvjrJNLUvz4pAS7CkdEZsjsMg4ejrWIGkkcYK/ag==
+"@newhighsco/release-config@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.4.2.tgz#7a3f4bcf3dce2276316c928d9516512a3755473f"
+  integrity sha512-NDwn07LA7QZF0AZD9JgxWE+JFkdT1kQMdSd4kIyl2FojZstdDJF/dTSlMOcGybxzXuuwCWljWSnHuI7s6E4EpQ==
   dependencies:
     "@semantic-release/changelog" "6.0.3"
     "@semantic-release/commit-analyzer" "13.0.1"
