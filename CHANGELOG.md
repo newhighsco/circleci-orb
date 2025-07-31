@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/newhighsco/circleci-orb/compare/v1.11.0...v1.12.0) (2025-07-31)
+
+
+### Features
+
+* **jobs:** add `analyze` to work with Omlet ([#379](https://github.com/newhighsco/circleci-orb/issues/379)) ([3136142](https://github.com/newhighsco/circleci-orb/commit/3136142bf45a5abd9d4fb7230712695fb397e7ac))
+
 # [1.11.0](https://github.com/newhighsco/circleci-orb/compare/v1.10.2...v1.11.0) (2025-01-23)
 
 
