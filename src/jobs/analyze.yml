@@ -1,0 +1,12 @@
+parameters:
+  command:
+    type: string
+    default: yarn analyze
+
+executor: default
+
+steps:
+  - attach_workspace:
+      at: .
+  - run:
+      command: <<parameters.command>>
