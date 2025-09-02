@@ -1,4 +1,7 @@
 parameters:
+  disabled:
+    type: boolean
+    default: false
   command:
     type: string
     default: yarn analyze
@@ -6,7 +9,14 @@ parameters:
 executor: default
 
 steps:
-  - attach_workspace:
-      at: .
-  - run:
-      command: <<parameters.command>>
+  - when:
+      condition: <<parameters.disabled>>
+      steps:
+        - run: echo "disabled paramater set, skipping"
+  - unless:
+      condition: <<parameters.disabled>>
+      steps:
+        - attach_workspace:
+            at: .
+        - run:
+            command: <<parameters.command>>
