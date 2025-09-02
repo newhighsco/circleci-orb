@@ -37,7 +37,7 @@
       "@newhighsco"
     ]
   },
-    "release": {
+  "release": {
     "extends": "@newhighsco/release-config/orb",
     "branches": [
       "main"
