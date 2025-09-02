@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/newhighsco/circleci-orb/compare/v1.12.0...v1.13.0) (2025-09-02)
+
+
+### Features
+
+* **analyze:** add parameter to disable ([#387](https://github.com/newhighsco/circleci-orb/issues/387)) ([430e697](https://github.com/newhighsco/circleci-orb/commit/430e69760ea81d169b87ed750e33d21a22bd627b))
+
 # [1.12.0](https://github.com/newhighsco/circleci-orb/compare/v1.11.0...v1.12.0) (2025-07-31)
 
 
