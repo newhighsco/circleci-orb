@@ -29,17 +29,12 @@
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/release-config": "1.4.8",
     "husky": "9.1.7",
-    "semantic-release": "24.2.7"
+    "semantic-release": "24.2.7",
+    "semantic-release-circleci-orb": "1.1.1"
   },
   "commitlint": {
     "extends": [
       "@newhighsco"
-    ]
-  },
-  "release": {
-    "extends": "@newhighsco/release-config/orb",
-    "branches": [
-      "main"
     ]
   },
   "renovate": {
