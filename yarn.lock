@@ -210,10 +210,10 @@
   resolved "https://registry.yarnpkg.com/@newhighsco/editor-config/-/editor-config-1.2.0.tgz#a2b4771cb2cb05bc841fdb02fdf27ce7800947a2"
   integrity sha512-dQYY50CJHdQR5X31xZM2YSTrCBE71mXuKzHTSwojWChPGJt4m/ZUNkcd4qZ+3HutuFIs+C5X+Focl/6nVIztQA==
 
-"@newhighsco/release-config@1.4.8":
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.4.8.tgz#f527df8922d07af649ad1404d9721fdfc9058f61"
-  integrity sha512-BdM7KzfdShhV8q36ZEjZtld4YayNTVT4p1ZlG6inEaTpKIxXz4M5COQ3wXRdx9lBZ7yK8z04B2eB6jbtN18u2g==
+"@newhighsco/release-config@1.4.9":
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/@newhighsco/release-config/-/release-config-1.4.9.tgz#7f98841b843d2594a3295f364f500a2b4819a5db"
+  integrity sha512-c0KDrTqJ6vXMfX32VjgCPdIOth+oIxHY75PClqdyqD5LRPuWAUZziApb4+w3WGIpSOzOnD2cVZLQ3/MNNgj5rg==
   dependencies:
     "@semantic-release/changelog" "6.0.3"
     "@semantic-release/commit-analyzer" "13.0.1"
@@ -221,7 +221,6 @@
     "@semantic-release/github" "11.0.5"
     "@semantic-release/npm" "12.0.2"
     "@semantic-release/release-notes-generator" "14.0.3"
-    semantic-release-circleci-orb "1.1.1"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4685,7 +4684,6 @@ npm@^6.4.1:
     cmd-shim "^3.0.3"
     columnify "~1.5.4"
     config-chain "^1.1.13"
-    debuglog "*"
     detect-indent "~5.0.0"
     detect-newline "^2.1.0"
     dezalgo "^1.0.4"
@@ -4700,7 +4698,6 @@ npm@^6.4.1:
     has-unicode "~2.0.1"
     hosted-git-info "^2.8.9"
     iferr "^1.0.2"
-    imurmurhash "*"
     infer-owner "^1.0.4"
     inflight "~1.0.6"
     inherits "^2.0.4"
@@ -4719,14 +4716,8 @@ npm@^6.4.1:
     libnpx "^10.2.4"
     lock-verify "^2.2.2"
     lockfile "^1.0.4"
-    lodash._baseindexof "*"
     lodash._baseuniq "~4.6.0"
-    lodash._bindcallback "*"
-    lodash._cacheindexof "*"
-    lodash._createcache "*"
-    lodash._getnative "*"
     lodash.clonedeep "~4.5.0"
-    lodash.restparam "*"
     lodash.union "~4.6.0"
     lodash.uniq "~4.5.0"
     lodash.without "~4.4.0"
