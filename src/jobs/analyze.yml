@@ -12,7 +12,7 @@ steps:
   - when:
       condition: <<parameters.disabled>>
       steps:
-        - run: echo "`disabled` paramater set to `true`"
+        - run: echo "disabled paramater set, skipping"
   - unless:
       condition: <<parameters.disabled>>
       steps:
