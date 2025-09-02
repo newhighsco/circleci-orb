@@ -9,6 +9,10 @@ parameters:
 executor: default
 
 steps:
+  - when:
+      condition: <<parameters.disabled>>
+      steps:
+        - run: echo "`disabled` paramater set to `true`"
   - unless:
       condition: <<parameters.disabled>>
       steps:
