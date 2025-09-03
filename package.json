@@ -21,14 +21,23 @@
     "pretest": "yarn lint",
     "test": "circleci orb validate --skip-update-check dist/orb.yml",
     "prelint": "yarn build",
-    "lint": "yamllint ."
+    "lint": "concurrently yarn:lint:*",
+    "lint:yml": "yamllint .",
+    "lint:js": "eslint --cache --ignore-path .gitignore .",
+    "format": "concurrently yarn:format:*",
+    "format:js": "yarn lint:js --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "19.8.1",
     "@newhighsco/commitlint-config": "1.1.46",
     "@newhighsco/editor-config": "1.2.0",
-    "@newhighsco/release-config": "1.4.10",
+    "@newhighsco/eslint-config": "4.2.0",
+    "@newhighsco/prettier-config": "2.1.32",
+    "@newhighsco/release-config": "1.4.11",
+    "concurrently": "9.2.1",
+    "eslint": "8.57.1",
     "husky": "9.1.7",
+    "prettier": "3.6.2",
     "semantic-release": "24.2.7",
     "semantic-release-circleci-orb": "1.1.1"
   },
@@ -37,15 +46,13 @@
       "@newhighsco"
     ]
   },
-  "release": {
-    "extends": "@newhighsco/release-config/orb",
-    "branches": [
-      "main"
+  "eslintConfig": {
+    "extends": [
+      "@newhighsco"
     ]
   },
-  "renovate": {
-    "extends": [
-      "local>newhighsco/.github:renovate-config"
-    ]
+  "prettier": "@newhighsco/prettier-config",
+  "release": {
+    "extends": "@newhighsco/release-config/orb"
   }
 }
