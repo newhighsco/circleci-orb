@@ -2,6 +2,10 @@ parameters:
   cache-version:
     type: string
     default: v1
+  checkout-method:
+    type: enum
+    enum: [blobless, full]
+    default: blobless
   install-command:
     type: string
     default: ''
@@ -12,7 +16,8 @@ environment:
   HUSKY: 0
 
 steps:
-  - checkout
+  - checkout:
+      method: <<parameters.checkout-method>>
   - node/install:
       install-yarn: true
   - node/install-packages:
