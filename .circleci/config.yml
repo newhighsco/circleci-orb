@@ -51,7 +51,6 @@ workflows:
           name: prerelease
           orb_name: newhighsco/orb
           circleci_token: CIRCLECI_API_TOKEN
-          dev_tags: dev:${CIRCLE_SHA1:0:8},dev:${CIRCLE_PR_NUMBER}
           pub_type: dev
           vcs_type: <<pipeline.project.type>>
           requires:
