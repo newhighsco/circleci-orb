@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/newhighsco/circleci-orb/compare/v1.13.0...v1.14.0) (2025-11-19)
+
+
+### Features
+
+* **setup:** support checkout method ([#432](https://github.com/newhighsco/circleci-orb/issues/432)) ([6aef54c](https://github.com/newhighsco/circleci-orb/commit/6aef54cc062ffc94d95b744164a23ab1c984fdf2))
+
 # [1.13.0](https://github.com/newhighsco/circleci-orb/compare/v1.12.0...v1.13.0) (2025-09-02)
 
 
