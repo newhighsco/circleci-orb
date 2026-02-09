@@ -17,6 +17,7 @@ parameters:
 executor: default
 
 environment:
+  COREPACK_HOME: /tmp/corepack
   HUSKY: 0
 
 steps:
