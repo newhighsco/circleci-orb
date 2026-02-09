@@ -29,7 +29,7 @@ steps:
         equal: [yarn-berry, <<parameters.pkg-manager>>]
       steps:
         - run:
-            command: corepack install -g
+            command: corepack install -g yarn
   - node/install-packages:
       cache-path: node_modules
       cache-version: <<parameters.cache-version>>
