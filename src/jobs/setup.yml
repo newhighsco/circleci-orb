@@ -1,4 +1,7 @@
 parameters:
+  cache-path:
+    type: string
+    default: node_modules
   cache-version:
     type: string
     default: v1
@@ -30,12 +33,13 @@ steps:
       steps:
         - run:
             name: Enable Corepack
-            command: corepack enable yarn --install-directory ~/bin
+            command: corepack enable --install-directory /home/circleci/bin
   - node/install-packages:
-      cache-path: node_modules
+      cache-path: <<parameters.cache-path>>
       cache-version: <<parameters.cache-version>>
       override-ci-command: <<parameters.install-command>>
       pkg-manager: <<parameters.pkg-manager>>
+      check-cache: always
       include-branch-in-cache-key: false
   - persist_to_workspace:
       root: .
