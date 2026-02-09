@@ -1,7 +1,4 @@
 parameters:
-  cache-path:
-    type: string
-    default: node_modules
   cache-version:
     type: string
     default: v1
@@ -27,15 +24,10 @@ steps:
       method: <<parameters.checkout-method>>
   - node/install:
       install-yarn: <<parameters.pkg-manager=="yarn">>
-  - when:
-      condition:
-        equal: [yarn-berry, <<parameters.pkg-manager>>]
-      steps:
-        - run:
-            name: Enable Corepack
-            command: corepack enable --install-directory /home/circleci/bin
+  - run:
+      command: corepack enable
   - node/install-packages:
-      cache-path: <<parameters.cache-path>>
+      cache-path: node_modules
       cache-version: <<parameters.cache-version>>
       override-ci-command: <<parameters.install-command>>
       pkg-manager: <<parameters.pkg-manager>>
