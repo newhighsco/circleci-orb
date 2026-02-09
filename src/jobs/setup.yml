@@ -30,7 +30,7 @@ steps:
       steps:
         - run:
             name: Enable Corepack
-            command: sudo corepack enable
+            command: corepack enable --install-directory="/home/circleci/bin"
   - node/install-packages:
       cache-path: node_modules
       cache-version: <<parameters.cache-version>>
