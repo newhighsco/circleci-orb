@@ -17,8 +17,6 @@ executor: default
 steps:
   - attach_workspace:
       at: .
-  - run:
-      command: corepack enable
   - when:
       condition: <<parameters.rerun-only-failed>>
       steps:
