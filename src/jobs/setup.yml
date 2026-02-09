@@ -10,7 +10,8 @@ parameters:
     type: string
     default: ''
   pkg-manager:
-    type: string
+    type: enum
+    enum: [yarn, yarn-berry]
     default: yarn
 
 executor: default
