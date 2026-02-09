@@ -37,7 +37,6 @@ steps:
       override-ci-command: <<parameters.install-command>>
       pkg-manager: <<parameters.pkg-manager>>
       include-branch-in-cache-key: false
-      check-cache: always
   - persist_to_workspace:
       root: .
       paths:
