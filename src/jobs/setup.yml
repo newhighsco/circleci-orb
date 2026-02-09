@@ -22,12 +22,15 @@ environment:
 steps:
   - checkout:
       method: <<parameters.checkout-method>>
+  - node/install:
+      install-yarn: <<parameters.pkg-manager=="yarn">>
   - when:
       condition:
-        equal: [yarn, <<parameters.pkg-manager>>]
+        equal: [yarn-berry, <<parameters.pkg-manager>>]
       steps:
-        - node/install:
-            install-yarn: true
+        - run:
+            name: Enable Corepack
+            command: sudo corepack enable
   - node/install-packages:
       cache-path: node_modules
       cache-version: <<parameters.cache-version>>
