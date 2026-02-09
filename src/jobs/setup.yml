@@ -22,9 +22,14 @@ environment:
 steps:
   - checkout:
       method: <<parameters.checkout-method>>
-  - run:
-      command: corepack install -g
-  - node/install
+  - node/install:
+      install-yarn: <<parameters.pkg-manager=="yarn">>
+  - when:
+      condition:
+        equal: [yarn-berry, <<parameters.pkg-manager>>]
+      steps:
+        - run:
+            command: corepack install -g
   - node/install-packages:
       cache-path: node_modules
       cache-version: <<parameters.cache-version>>
