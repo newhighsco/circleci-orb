@@ -23,7 +23,7 @@ steps:
   - checkout:
       method: <<parameters.checkout-method>>
   - run:
-      command: corepack install
+      command: corepack install -g
   - node/install
   - node/install-packages:
       cache-path: node_modules
