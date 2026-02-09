@@ -39,6 +39,7 @@ steps:
       cache-version: <<parameters.cache-version>>
       override-ci-command: <<parameters.install-command>>
       pkg-manager: <<parameters.pkg-manager>>
+      with-cache: <<parameters.pkg-manager=="yarn">>
       check-cache: always
       include-branch-in-cache-key: false
   - persist_to_workspace:
