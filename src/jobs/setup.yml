@@ -25,8 +25,14 @@ environment:
 steps:
   - checkout:
       method: <<parameters.checkout-method>>
-  - run:
-      command: corepack enable
+  - when:
+      condition:
+        equal: [yarn-berry, <<parameters.pkg-manager>>]
+      steps:
+        - run:
+            command: corepack enable
+        - run:
+            command: corepack install -g yarn
   - node/install:
       install-yarn: true
       yarn-version: <<parameters.yarn-version>>
