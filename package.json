@@ -33,7 +33,7 @@
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "7.0.5",
     "@newhighsco/prettier-config": "2.3.3",
-    "@newhighsco/release-config": "1.4.24",
+    "@newhighsco/release-config": "1.4.25",
     "concurrently": "9.2.1",
     "eslint": "10.0.0",
     "husky": "9.1.7",
