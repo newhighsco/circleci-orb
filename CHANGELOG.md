@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/newhighsco/circleci-orb/compare/v1.14.0...v1.15.0) (2026-04-22)
+
+
+### Features
+
+* **test:** remove `--silent` flag ([#567](https://github.com/newhighsco/circleci-orb/issues/567)) ([f47e822](https://github.com/newhighsco/circleci-orb/commit/f47e822d45e7297fd49c7b2832c1cd6b230ac99d))
+
 # [1.14.0](https://github.com/newhighsco/circleci-orb/compare/v1.13.0...v1.14.0) (2025-11-19)
 
 
