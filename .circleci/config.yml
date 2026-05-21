@@ -23,6 +23,8 @@ jobs:
           paths:
             - '*'
   release:
+    context:
+      - release
     executor: node/default
     steps:
       - attach_workspace:
