@@ -59,6 +59,8 @@ workflows:
               ignore:
                 - main
       - release:
+          context:
+            - release
           requires:
             - build
           filters:
