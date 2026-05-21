@@ -23,8 +23,6 @@ jobs:
           paths:
             - '*'
   release:
-    context:
-      - release
     executor: node/default
     steps:
       - attach_workspace:
@@ -61,6 +59,8 @@ workflows:
               ignore:
                 - main
       - release:
+          context:
+            - release
           requires:
             - build
           filters:
