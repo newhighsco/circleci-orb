@@ -33,7 +33,7 @@
     "@newhighsco/editor-config": "1.2.0",
     "@newhighsco/eslint-config": "7.1.18",
     "@newhighsco/lint-staged-config": "1.1.0",
-    "@newhighsco/prettier-config": "2.3.11",
+    "@newhighsco/prettier-config": "2.3.12",
     "@newhighsco/release-config": "1.5.2",
     "@newhighsco/yarn-plugin-preset": "1.1.4",
     "concurrently": "10.0.3",
