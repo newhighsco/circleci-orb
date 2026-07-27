@@ -1,5 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["local>newhighsco/.github:renovate-config"],
-  "circleci": { "managerFilePatterns": ["src/@orb.yml"] }
+  "circleci": { "managerFilePatterns": ["src/@orb.yml"] },
+  "packageRules": [
+    {
+      "matchManagers": ["circleci"],
+      "matchPackageNames": ["node"],
+      "semanticCommitType": "fix"
+    }
+  ]
 }
