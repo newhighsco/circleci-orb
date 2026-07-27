@@ -1,3 +1,5 @@
+## [2.0.1](https://github.com/newhighsco/circleci-orb/compare/v2.0.0...v2.0.1) (2026-07-27)
+
 ## [2.0.0](https://github.com/newhighsco/circleci-orb/compare/v1.15.0...v2.0.0) (2026-07-27)
 
 # [1.15.0](https://github.com/newhighsco/circleci-orb/compare/v1.14.0...v1.15.0) (2026-04-22)
