@@ -21,7 +21,7 @@ steps:
   - node/install:
       install-yarn: true
   - node/install-packages:
-      pkg-manager: yarn
+      pkg-manager: yarn-berry
       cache-path: node_modules
       cache-version: <<parameters.cache-version>>
       override-ci-command: <<parameters.install-command>>
