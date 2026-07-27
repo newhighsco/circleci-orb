@@ -16,7 +16,7 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn-berry
           cache-version: v2
-          check-cache: detect
+          check-cache: always
           include-branch-in-cache-key: false
       - persist_to_workspace:
           root: .
