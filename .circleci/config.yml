@@ -15,7 +15,7 @@ jobs:
       - node/install:
           install-yarn: true
       - node/install-packages:
-          pkg-manager: yarn
+          pkg-manager: yarn-berry
           cache-path: node_modules
           include-branch-in-cache-key: false
       - persist_to_workspace:
