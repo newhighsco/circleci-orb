@@ -24,6 +24,7 @@ steps:
       cache-version: <<parameters.cache-version>>
       check-cache: always
       override-ci-command: <<parameters.install-command>>
+      include-branch-in-cache-key: false
   - persist_to_workspace:
       root: .
       paths:

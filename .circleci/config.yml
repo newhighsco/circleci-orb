@@ -17,6 +17,7 @@ jobs:
           pkg-manager: yarn-berry
           cache-version: v2
           check-cache: always
+          include-branch-in-cache-key: false
       - persist_to_workspace:
           root: .
           paths:
