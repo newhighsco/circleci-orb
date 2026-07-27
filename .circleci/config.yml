@@ -12,11 +12,11 @@ jobs:
       HUSKY: 0
     steps:
       - checkout
-      - node/install:
-          install-yarn: true
+      - node/install
       - node/install-packages:
-          pkg-manager: yarn
-          cache-path: node_modules
+          pkg-manager: yarn-berry
+          cache-version: v2
+          check-cache: always
           include-branch-in-cache-key: false
       - persist_to_workspace:
           root: .
@@ -47,6 +47,8 @@ workflows:
           requires:
             - test
       - orb-tools/publish:
+          context:
+            - release
           name: prerelease
           orb_name: newhighsco/orb
           circleci_token: CIRCLECI_API_TOKEN
