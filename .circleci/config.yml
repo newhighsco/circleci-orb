@@ -47,6 +47,8 @@ workflows:
           requires:
             - test
       - orb-tools/publish:
+          context:
+            - release
           name: prerelease
           orb_name: newhighsco/orb
           circleci_token: CIRCLECI_API_TOKEN
