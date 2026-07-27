@@ -6,4 +6,4 @@ display:
   source_url: https://github.com/newhighsco/circleci-orb
 
 orbs:
-  node: circleci/node@5.0.2
+  node: circleci/node@5.3.0
