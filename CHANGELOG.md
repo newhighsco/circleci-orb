@@ -1,3 +1,9 @@
+## [2.1.0](https://github.com/newhighsco/circleci-orb/compare/v2.0.2...v2.1.0) (2026-09-30)
+
+### Features
+
+* **release:** support OIDC ([#560](https://github.com/newhighsco/circleci-orb/issues/560)) ([e76fbad](https://github.com/newhighsco/circleci-orb/commit/e76fbad46ea95e680997f0844b165a9ceb4bfc86))
+
 ## [2.0.2](https://github.com/newhighsco/circleci-orb/compare/v2.0.1...v2.0.2) (2026-08-07)
 
 ## [2.0.1](https://github.com/newhighsco/circleci-orb/compare/v2.0.0...v2.0.1) (2026-07-27)
