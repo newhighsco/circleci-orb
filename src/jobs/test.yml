@@ -4,7 +4,7 @@ parameters:
     default: yarn test
   list-command:
     type: string
-    default: yarn --silent test:list
+    default: yarn test:list
   reports-dir:
     type: string
     default: reports
