@@ -10,5 +10,7 @@ steps:
       at: .
   - run:
       command: |
-        export NPM_ID_TOKEN=$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}')
-        <<parameters.command>>
+        NPM_ID_TOKEN=$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}')
+        echo "export NPM_ID_TOKEN=$NPM_ID_TOKEN" >> "$BASH_ENV"
+  - run:
+      command: <<parameters.command>>
