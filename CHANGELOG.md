@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/newhighsco/circleci-orb/compare/v2.1.0...v2.1.1) (2026-10-28)
+
+### Bug Fixes
+
+* **release:** export OIDC token ([#762](https://github.com/newhighsco/circleci-orb/issues/762)) ([e1f26e2](https://github.com/newhighsco/circleci-orb/commit/e1f26e2d1e1c43c5c329b598ff03a1377d5ec86f))
+* **release:** git auth issues ([96e3a4b](https://github.com/newhighsco/circleci-orb/commit/96e3a4be10944803eb981fedf508d5931017f576))
+
 ## [2.1.0](https://github.com/newhighsco/circleci-orb/compare/v2.0.2...v2.1.0) (2026-09-30)
 
 ### Features
