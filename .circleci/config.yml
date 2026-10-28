@@ -30,7 +30,9 @@ jobs:
       - run:
           command: yarn build
       - run:
-          command: yarn semantic-release --debug
+          command: |
+            git config --global http.https://github.com/.extraheader "Authorization: Basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)"
+            yarn semantic-release --debug
 
 workflows:
   version: 2
