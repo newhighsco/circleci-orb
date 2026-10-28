@@ -30,7 +30,7 @@ jobs:
       - run:
           command: yarn build
       - run:
-          command: yarn semantic-release
+          command: yarn semantic-release --debug
 
 workflows:
   version: 2
