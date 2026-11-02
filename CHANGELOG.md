@@ -1,3 +1,9 @@
+## [2.1.2](https://github.com/newhighsco/circleci-orb/compare/v2.1.1...v2.1.2) (2026-11-02)
+
+### Bug Fixes
+
+* **setup:** manually install `corepack` ([#766](https://github.com/newhighsco/circleci-orb/issues/766)) ([181e46c](https://github.com/newhighsco/circleci-orb/commit/181e46c92c7cb235e09097ae8d7af918222be549))
+
 ## [2.1.1](https://github.com/newhighsco/circleci-orb/compare/v2.1.0...v2.1.1) (2026-10-28)
 
 ### Bug Fixes
