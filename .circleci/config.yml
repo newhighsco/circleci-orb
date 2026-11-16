@@ -2,27 +2,11 @@ version: 2.1
 
 orbs:
   cli: circleci/circleci-cli@0.1.11
+  newhighsco: {}
   node: circleci/node@7.2.1
   orb-tools: circleci/orb-tools@12.5.0
 
 jobs:
-  setup:
-    executor: node/default
-    environment:
-      HUSKY: 0
-    steps:
-      - checkout
-      - node/install
-      - run:
-          command: npm install -g corepack
-      - node/install-packages:
-          pkg-manager: yarn-berry
-          cache-version: v2
-          check-cache: always
-      - persist_to_workspace:
-          root: .
-          paths:
-            - '*'
   release:
     executor: node/default
     steps:
@@ -40,7 +24,8 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-      - setup
+      - newhighsco/setup:
+          name: setup
       - orb-tools/lint:
           name: test
           requires:
