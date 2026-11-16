@@ -1,0 +1,6 @@
+steps:
+  - run:
+      name: Setup OIDC
+      command: |
+        NPM_ID_TOKEN=$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}')
+        echo "export NPM_ID_TOKEN=$NPM_ID_TOKEN" >> "$BASH_ENV"
