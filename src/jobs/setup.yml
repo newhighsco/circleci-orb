@@ -26,6 +26,7 @@ steps:
       cache-version: <<parameters.cache-version>>
       check-cache: always
       override-ci-command: <<parameters.install-command>>
+  - setup-github
   - persist_to_workspace:
       root: .
       paths:
